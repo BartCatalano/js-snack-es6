@@ -20,15 +20,17 @@ const Squadre = [
     console.log(Squadre);
 // creo nuovo array e divido i dati
     const arrayNomiFalli= [];
-    const arrayPunti = [];
+    
 
     for(let i = 0; i < Squadre.length; i++){
         const curSquadra = Squadre[i];
-            arrayNomiFalli.push(curSquadra.nome);
-            arrayNomiFalli.push(curSquadra.fallisubiti);
-            arrayPunti.push(curSquadra.punti);
+        const team = {
+            nome: curSquadra.nome,
+            fallisubiti: curSquadra.fallisubiti
+        }
+            arrayNomiFalli.push(team);
     }
     
-console.log(arrayNomiFalli,arrayPunti);
+console.log(arrayNomiFalli);
 
 
